@@ -1,0 +1,73 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url(common.css);
+
+
+   /*네비*/ 
+.logslide {width:100%; background: url(../images/sub_visual_07.jpg)no-repeat center;
+height: 260px}
+
+.subleft li:last-child a {
+    color: #004EAE;
+}
+
+/*오른쪽*/
+
+
+.right legend {position:static; text-indent: 0px; font-weight: bold;padding:10px; }
+
+.right table {border-top:2px solid #004DBB; border-bottom: 1px solid #ddd;width:100%; margin-bottom: 30px }
+
+ .col1 {width:25%;border-right: 1px solid #e8e8e8;}
+ .col2 {width:75%}
+
+.right td{ padding: 5px 20px;
+    border-top: 1px dotted #e3e3e3;
+    
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;font-size:13px}
+
+.right #idi , #password , #passcheck , #irum , #email  {width:147px;height: 24px}
+
+.right #idcheck {background: transparent;width:100px;  border: 1px solid #004DBB;margin-left: 5px;color:#000;font-weight: bold;font-size:12px;color:#004DBB; }
+
+.right #idcheck:hover {background:#004DBB; color:#fff }
+
+.right span {margin-left:5px }
+
+.right #question , #add{width:290px; height:24px}
+
+.right #checking {width:510px; height: 24px}
+
+.right #add1 {width:50px; height: 24px; }
+
+.right #add2 {background: transparent; border: 1px solid #ddd; height: 24px}
+
+.right #call, #cell {width:60px; height: 24px}
+
+
+/*추가정보*/
+
+.right #year {width:70px; height:24px}
+.right #month , #day {width:40px; height: 24px}
+.right #yang {margin-left: 20px}
+.right #um {margin-left: 10px}
+.right #region {width:200px; height:24px}
+
+.right #deposit , #bank , #account {width:145px;height: 24px; margin-left: 10px;vertical-align: middle;}
+
+.right .lalala {display: inline-block;width:70px;height: 24px;font-weight: bold}
+
+/*이용약관*/
+.agree {margin-bottom: 30px;width:100%}
+.agree h3 {font-weight: bold;padding:10px;border-bottom:2px solid #004DBB;}
+.agreetext {padding:20px; border:1px solid #ddd;height: 150px; overflow-y: scroll}
+
+.agree p {display: inline-block;margin-right: 10px;font-size: 12px; padding:10px}
+
+.agree #gyes+label ,.agree #pyes+label {margin-left: 5px;font-size:12px}
+
+/*버튼*/
+.joinus button {background: url(../images/btnbg.jpg)no-repeat center center;text-align: center; width:100%;height: 34px; color:#fff; margin-bottom: 30px}
+

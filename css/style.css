@@ -1,0 +1,662 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url(common.css);
+
+/*슬라이드*/
+
+.slide {
+    height: 505px;
+    /* overflow: hidden;
+    background: url(../images/iv_bg_01.jpg); */
+    animation: ani 9s infinite 1s;
+    position: relative;
+}
+
+.slide img {
+    display: none
+}
+
+
+/* @keyframes ani{
+    0% { background: url(../images/iv_bg_01.jpg);}
+    
+    20% { background: url(../images/iv_bg_02.jpg);}
+    
+    40% { background: url(../images/iv_bg_03.jpg);}
+    
+    60% { background: url(../images/iv_bg_04.jpg);}
+    
+    80% { background: url(../images/iv_bg_05.jpg);}
+
+    100% { background: url(../images/iv_bg_01.jpg);}
+}
+     */
+
+.pic {
+    position: absolute;
+    bottom: 200px;
+    right: 0px;
+    height: 100px;
+}
+
+.hong {
+    background: #fff;
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    position: absolute;
+    bottom: 120px;
+    right: 0px;
+    font-weight: bold;
+    color: #333333;
+    border-radius: 30px
+}
+
+.hong:hover {
+    color: #FFF;
+    background: #BB1909;
+}
+
+.hong2 {
+    position: absolute;
+    bottom: 30px;
+    right: 36px;
+}
+
+.hong21 li {
+    float: left;
+    width: 33.33%;
+    position: relative
+}
+
+.hong21 li:before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: -1px;
+    border-left: 1px dotted #CCC;
+}
+
+.hong21 li.on:after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    right: -1px;
+    border-right: 1px dotted #CCC;
+}
+
+.hong21:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: -36px;
+    background: url(../images/btn_prev.png)no-repeat;
+    width: 36px;
+    height: 86px
+}
+
+.hong21:after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: -35px;
+    background: url(../images/btn_next.png)no-repeat;
+    width: 36px;
+    height: 86px
+}
+
+
+/*디렉션*/
+
+.direction {
+    width: 120px;
+    height: 40px;
+    overflow: hidden;
+    text-align: center;
+    position: absolute;
+    bottom: 90px;
+    right: 180px;
+}
+
+.direction a {
+    float: left;
+    text-indent: -9999px;
+    width: 40px;
+    height: 40px;
+    background: url(../images/index_iv_control.png)no-repeat;
+}
+
+.direction a:first-child {
+    background-position: 0px -40px
+}
+
+.direction a:nth-child(2) {
+    background-position: -40px -40px
+}
+
+.direction a:nth-child(3) {
+    background-position: -120px -40px
+}
+
+.direction a:first-child:hover {
+    background-position: 0px 0px
+}
+
+.direction a:nth-child(2):hover {
+    background-position: -40px 0px
+}
+
+.direction a:nth-child(3):hover {
+    background-position: -120px 0px
+}
+
+
+/*퀵 노티스*/
+
+.sec03 {
+    height: 370px;
+    background: #eee;
+    position: relative;
+}
+
+.sec_03 {
+    width: 55%;
+    margin: 0 auto;
+    position: relative
+}
+
+.outer span.on {
+    width: 1300px;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    margin-left: -650px;
+    z-index: 999;
+    text-align: right
+}
+
+.outer span.two {
+    width: 1300px;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    margin-left: -650px;
+    z-index: 999;
+    text-align: right
+}
+
+.quick {
+    float: left;
+    background: #027fc1;
+    width: 45%;
+    height: 370px;
+    overflow: hidden;
+    text-align: center;
+    margin-top: -20px
+}
+
+
+/*퀵*/
+
+.quick h1 {
+    font-size: 30px;
+    color: #FFFFFF;
+    height: 72px;
+    line-height: 72px;
+    text-align: left;
+    width: 85%;
+    margin: 0 auto
+}
+
+.quick .main {
+    width: 80%;
+    margin: 0 auto;
+    width: 400px;
+    background: #002148;
+}
+
+.quick .main li {
+    float: left;
+}
+
+.quick .main li>a {
+    display: block;
+    min-width: 100px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 10px;
+    text-align: center;
+    border-left: 1px solid #093161;
+    color: #fff;
+    font-size: 14px
+}
+
+.link_01 {
+    height: 180px;
+    overflow: hidden
+}
+
+.sub {
+    width: 400px;
+    margin: 0 auto
+}
+
+.sub_main {
+    padding: 20px;
+}
+
+.sub .sub_main li {
+    float: left;
+    width: 27%;
+    list-style: outside;
+    color: #fff;
+    margin-left: 20px
+}
+
+.sub .sub_main li a {
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 3px;
+    vertical-align: top;
+    font-size: 12px;
+}
+
+.ille {
+    width: 80%;
+    margin: 0 auto
+}
+
+.illu li {
+    float: left;
+    width: 16.66%;
+    margin-top: 10px
+}
+
+.blue0 {
+    background: #003e75
+}
+
+.blue {
+    background: #003e75 url(../images/index_quick_links_bg_01.png) no-repeat right bottom;
+    height: 180px;
+}
+
+.blue2 {
+    background: #003e75 url(../images/index_quick_links_bg_03.png) no-repeat right bottom;
+    height: 180px;
+}
+
+.sky {
+    background: #00ade3 url(../images/index_quick_links_bg_02.png) no-repeat right bottom;
+    height: 180px;
+}
+
+.sky2 {
+    background: #00ade3 url(../images/index_quick_links_bg_04.png) no-repeat right bottom;
+    height: 180px;
+}
+
+.main li:hover>a:nth-child(2) {
+    background: #003e75;
+}
+
+
+/*노티스*/
+
+.notice {
+    float: right;
+    width: 55%;
+    background: #fff;
+    height: 370px;
+    overflow: hidden;
+    margin-top: -20px
+}
+
+.notic {
+    width: 85%;
+    margin: 0 auto
+}
+
+.notice h2 {
+    height: 72px;
+    line-height: 72px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 30px;
+    color: #444
+}
+
+.main2 {
+    width: 100%;
+    margin-bottom: 30px;
+    position: relative;
+    margin: 0 auto;
+    height: 42px;
+}
+
+.main2:before {
+    content: '';
+    width: 20px;
+    height: 1px;
+    position: absolute;
+    background: #888;
+    right: 31px;
+    top: 50%;
+    z-index: 1
+}
+
+.main2:after {
+    content: '';
+    width: 1px;
+    height: 20px;
+    position: absolute;
+    background: #888;
+    right: 40px;
+    top: 11px
+}
+
+.main2 li {
+    float: left;
+    width: 13%;
+    border-right: 1px solid #888;
+}
+
+.main2 li a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: bold;
+    color: #666666;
+    background: #F7F7F7;
+    border-bottom: 1px solid #888;
+    border-top: 1px solid #888;
+}
+
+.main2 li.on {
+    width: 110px
+}
+
+.main2 li.more {
+    display: block;
+    ;
+    height: 40px;
+    text-indent: -9999px;
+    position: relative;
+    width: 25px
+}
+
+.main2 li:first-child {
+    border-left: 1px solid #FF6C33;
+    border-right: 1px solid #FF6C33;
+}
+
+.main2 li:hover a {
+    background: rgb(0, 0, 0, 0.1)
+}
+
+.main2 li:first-child a {
+    color: #FFFFFF;
+    border-color: #FF6C33;
+    background: #FF6C33;
+}
+
+
+/*테이블*/
+
+.ttable {
+    height: 180px;
+    overflow: hidden;
+    table-layout: fixed;
+    width: 100%;
+    margin-top: 20px;
+    cursor: pointer
+}
+
+.ttable td {
+    padding: 6px 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 15px;
+    color: #555
+}
+
+.ttable td:first-child:hover {
+    color: #EE5B00;
+    text-decoration: underline
+}
+
+.ttable td img {
+    margin-left: 2px
+}
+
+.col1 {
+    width: auto
+}
+
+.col2 {
+    width: 15%
+}
+
+
+/*sec04*/
+
+
+/*방향키*/
+
+.sec04 {
+    height: 630px;
+    background: #fff;
+    margin: 0 auto
+}
+
+.sec04 .secnews {
+    width: 100%;
+    height: 72px;
+    line-height: 72px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative
+}
+
+.dic span.on {
+    width: 40px;
+    height: 30px;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -15px;
+    text-indent: -9999px;
+    background: url(../images/index_news_nav.png)no-repeat;
+    background-position: 0px -60px
+}
+
+.dic span.two {
+    width: 40px;
+    height: 30px;
+    overflow: hidden;
+    text-indent: -9999px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -15px;
+    background: url(../images/index_news_nav.png)no-repeat;
+    background-position: -42px -30px
+}
+
+.dic span.two:hover {
+    background-position: -42px 0px
+}
+
+.sec04 .new {
+    float: left;
+    width: 25%;
+    position: relative;
+    text-align: center
+}
+
+.sec04 .text {
+    position: absolute;
+    top: 230px;
+    left: 0;
+    height: 110px;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    cursor: pointer
+}
+
+.text span {
+    display: block;
+    color: #888;
+    font-size: 12px;
+    text-align: left;
+    width: 90%;
+    margin: 0 auto
+}
+
+.text strong {
+    display: block;
+    font-size: 19px;
+    white-space: nowrap;
+    font-weight: bold;
+    margin-bottom: 10px
+}
+
+.text strong:hover {
+    color: #EE5B00;
+    text-decoration: underline
+}
+
+.text p {
+    font-size: 14px;
+    color: #555;
+    width: 90%;
+    height: 50px;
+    overflow: hidden;
+    margin: 0 auto
+}
+
+
+/*sec 05*/
+
+.sec05 {
+    background: #eee;
+    height: 200px;
+    margin: 0 auto
+}
+
+.play {
+    float: left;
+    width: 49%;
+    height: 320px;
+    margin-top: -150px;
+}
+
+.index {
+    float: right;
+    width: 51%;
+    height: 320px;
+    background: #003e75;
+    margin-top: -150px
+}
+
+.inde {
+    width: 80%;
+    margin: 50px auto
+}
+
+.inde .index2 {
+    margin-top: 25px;
+    margin-bottom: 25px
+}
+
+.inde .index3 {
+    float: left;
+    width: 50%
+}
+
+.inde .index4 {
+    float: right;
+    width: 50%
+}
+
+
+/*sec 06*/
+
+.sec06 {
+    background: #eee;
+    height: 560px;
+    margin: 0 auto
+}
+
+.sec06 h2 {
+    text-align: center;
+    font-size: 30px;
+    padding: 30px 0px;
+    font-weight: bold
+}
+
+.lin {
+    text-align: left;
+    position: relative
+}
+
+.lin a {
+    float: left;
+    width: 19%;
+    overflow: hidden;
+    height: 60px;
+    background: #FFFFFF;
+    font-size: 15px;
+    line-height: 1.5em;
+    font-size: 15px;
+    font-weight: bold;
+    color: #666666;
+    letter-spacing: -0.1em;
+    padding: 15px 0 0 7px;
+    margin: 0 10px 10px 0;
+}
+
+.lin span {
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: middle
+}
+
+.lin .imga {
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+}
+
+.lin .imga img {
+    margin-top: -32px
+}
+
+.lin a:hover img {
+    margin-top: 0px
+}
+
+.lin .box {
+    width: 120px;
+    line-height: 1em
+}
+
+.lin a:hover {
+    background: #FF6C33;
+    color: #fff
+}

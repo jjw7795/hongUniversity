@@ -1,0 +1,526 @@
+@charset "utf-8";
+@import url(reset.css);
+
+@font-face {
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 900;
+    src: url(../webfonts/fa-solid-900.eot);
+    src: url(../webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(../webfonts/fa-solid-900.woff2) format("woff2"), url(../webfonts/fa-solid-900.woff) format("woff"), url(../webfonts/fa-solid-900.ttf) format("truetype"), url(../webfonts/fa-solid-900.svg#fontawesome) format("svg")
+}
+
+#top {
+    width: 100%;
+    background: #002148;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    line-height: 1.5em;
+    position: relative;
+}
+
+.top1 {
+    float: left;
+    width: 47%;
+}
+
+.top2 {
+    float: right;
+    width: 53%
+}
+
+.top2 .top22 > li {
+    display: inline-block;
+}
+
+.top1 a,
+.top2 a {
+    font-size: 12px;
+    padding: 0px 10px;
+    color: #E5DCCF;
+    ;
+    height: 35px;
+    line-height: 33px;
+    text-align: center;
+    display: inline-block
+}
+
+.top1 a {
+    border-right: 1px solid #1a385b;
+    padding: 0px 15px;
+}
+
+.top2 a {
+    padding: 0px 5px;
+}
+
+
+
+.top1 a.on {
+    ;
+    background: #001024;
+    border-left: 1px solid #1a385b;
+    position: relative;
+    color: #fff
+}
+
+.top1 a.on:after {
+    content: '';
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    border-bottom: 3px solid skyblue
+}
+
+.top1 a:hover,
+.top2 a:hover {
+    color: #fff
+}
+
+.top2 a.on {
+    background: #094286;
+}
+
+
+.top22 li.on {
+    position: relative;
+    padding: 0px 10px;
+    background: #001024;
+
+
+}
+
+.top22 li.on > a {
+    display: block;
+    color: #fff;
+}
+
+.top_sub {
+    position: absolute;
+    top: 32px;
+    left: 0;
+    width: 100%;
+    display: none;
+    z-index: 12
+}
+
+.top_sub a {
+    display: block;
+    color: #9DBED2;
+    background: #001024;
+    text-align: left;
+    text-indent: 10px;
+    height: 30px
+}
+
+
+
+.top22 li.on:hover .top_sub {
+    display: block
+}
+
+/*서치*/
+.search {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    width: 140px;
+    margin-top: -16px
+}
+
+.search input {
+    background: #fff;
+    border: none;
+    float: left;
+    width: 100px;
+    height: 32px;
+    font-size: 12px;
+    ;
+    outline: 0;
+
+}
+
+.search input::placeholder {
+    color: lightgray;
+    text-align: left;text-indent: 10px
+}
+
+.search button {
+    width: 32px;
+    height: 32px
+}
+
+
+/*해더*/
+#header {
+    background: #fff;
+    width: 100%;position: relative
+}
+
+#header h1 {
+position:absolute;top:20px;left:50%;margin-left: -500px;z-index: 999
+
+}
+
+
+#header .main {
+   line-height: 1.5em;
+    width: 75%;
+    float:right;
+    
+    z-index: 10;
+}
+
+#header .main > li {
+    float: left;
+    position: relative;
+    width:14.28%;
+
+}
+
+.main > li > a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-bottom: 3px solid blue;
+    display: none
+}
+
+.main > li:hover > a:after {
+    display: block
+}
+
+#header .main > li > a {
+    display: block;
+    width: 100%;
+    height: 85px;
+    line-height: 85px;
+    text-align: center;
+    font-size: 17px;
+    color: #333333;
+    text-align: center;
+
+}
+
+.main > li .sub {
+    position: absolute;
+    top:110px;
+    left: 0;
+    display: none;z-index: 9
+
+}
+
+.sub > li {
+    width: 114px
+}
+
+.sub > li > a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    color: #AAC5E7;
+}
+
+.sub > li:hover > a {
+    color: #fff;
+    text-decoration: underline
+}
+
+.bgbox {
+    width: 100%;
+    position: absolute;
+    top:85px;
+    left: 0;
+    background: #083772;
+    height: 200px;
+    display: none;
+    z-index: 8
+}
+
+#header:hover .sub {
+    display: block
+}
+
+#header:hover .bgbox {
+    display: block
+}
+
+
+/*푸터바*/
+.footbar {
+    background: #00ADE3;
+    height: 49px
+}
+
+.face {
+    line-height: 49px;
+    margin-left: 530px
+}
+
+.follow {
+    display: block;
+    width: 200px;
+    float: left;
+    font-size: 15px;
+    font-weight: bold;
+    color: #7E898C;
+    background: #fff;
+}
+
+.icon {
+    display: inline-block;
+    width: 270px;
+    background: #fff;
+    text-align: center;
+    letter-spacing: 5px
+}
+
+.follow span {
+    display: block;
+    ;
+    text-align: center
+}
+
+.follow:before {
+    content: '';
+    width: 49px;
+    height: 49px;
+    position: absolute;
+    left: 481px;
+    top: 0;
+    background: url(../images/footer_social_before.png)
+}
+
+/*푸터*/
+.footcon {
+    height: 145px;
+}
+
+.footimg {
+    float: left;
+    width: 30%;
+    line-height: 145px
+}
+
+.indi {
+    float: left;
+    width: 70%;
+    text-align: left;
+    padding: 30px
+}
+
+.indi a {
+    display: inline-block;
+    position: relative;
+    height: 40px;
+    line-height: 38px;
+    color: #999999;
+    padding: 0 8px;
+    font-size: 14px
+}
+
+.indi a:hover {
+    color: #555
+}
+
+.indi a:first-child {
+    color: #000;
+    font-weight: bold
+}
+
+.indi a:before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 8px;
+    position: absolute;
+    left: -2px;
+    top: 50%;
+    margin-top: -4px;
+    bottom: 0;
+    border-left: 1px solid #999
+}
+
+.indi a:first-child:before {
+    display: none
+}
+
+.address {
+    line-height: 1.7;
+    font-size: 13px;
+    color: #999999;
+}
+
+.address span.on {
+    position: relative;
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 12px
+}
+
+.address span.on:before {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 2px;
+    position: absolute;
+    left: -16px;
+    top: 50%;
+    border-left: 2px solid #999
+}
+
+.address span.on2 {
+    display: block
+}
+
+/*고탑*/
+.gotop {
+    position: fixed;
+    bottom: 300px;
+    right: 0;
+    width: 100%;
+    z-index: 99999;
+}
+
+.gotop .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: right;
+    width: 100%;
+}
+
+.lognav {
+    width: 100%;
+    height: 50px;
+    background: #e6e6e6;
+    margin-top: -50px
+}
+
+.lognav > a:first-child {
+    display: inline-block;
+    width: 20%;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #004EAE;
+    padding: 0 25px;
+    background: #FFFFFF;
+    position: relative
+}
+
+.lognav > a:first-child::after {
+    content: '';
+    background: url(../images/lnb_a3_after.png)no-repeat;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 100%
+}
+
+.log_right {
+    float: right;
+    line-height: 50px;
+    display: inline-block;
+    font-size: 12px;
+    color: #666
+}
+
+.log_right a {
+    padding-left: 20px;
+    display: inline-block;
+}
+
+
+
+
+
+.log_right a.last {
+    width: 50px;
+    height: 50px;
+    text-indent: -9999px;
+    background: #888 url(../images/fold.png)no-repeat;
+    background-position: 0px -50px;
+    margin-left: 30px
+}
+
+.log_right a.last:hover {
+    background: #888 url(../images/fold.png)no-repeat;
+}
+
+/*왼쪽*/
+.subboxx {
+    width: 100%;
+    height: 945px;
+    background: #fff
+}
+
+.logleft {
+    width: 25%;
+    float: left
+}
+
+.subleft {
+    width: 80%
+}
+
+.subleft a {
+    display: block;
+    font-weight: bold;
+    color: #777;
+    height: 39px;
+    line-height: 39px;
+    padding: 0px 25px;
+    transition: background .3s;
+    font-size: 14px;
+    border-bottom: 1px dotted #ddd;
+    background: url(../images/lnb_a4_gt.png)no-repeat 5% center
+}
+
+
+.subleft > li:hover > a {
+    text-decoration: underline;
+    color: #004EAE;
+}
+
+.pic {
+    margin-top: 50px;
+}
+
+.pic > a {
+    display: block;
+    width: 200px;
+    height: 60px;
+    overflow: hidden;
+    margin-top: 10px
+}
+
+.pic > a > img {
+    margin-top: -60px
+}
+
+.pic > a:hover > img {
+    margin-top: 0px
+}
+
+
+/*오른쪽*/
+.right {
+    width: 75%;
+    float: right
+}
+
+.right h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 15px;
+    padding: 30px 0px;
+    border-bottom: 1px solid #ddd
+}

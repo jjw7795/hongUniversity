@@ -1,0 +1,144 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url(common.css);
+
+
+/*네비*/
+.logslide {
+    width: 100%;
+    background: url(../images/sub_visual_08.jpg)no-repeat center;
+    height: 260px
+}
+
+.subleft li:first-child a {
+    color: #004EAE;
+}
+
+/*오른쪽*/
+.right h2 {
+    font-size: 24px;
+    color: #444;
+    margin-top: 10px;
+    margin-bottom: 20px
+}
+
+.right h2 span {
+    color: #004DBB
+}
+
+
+
+.logintext {
+    height: 203px;
+    background: #f9f9f9;
+    text-align: center;
+    padding: 25px 0;
+    border-top: 2px solid #000EAE;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+
+.logoimg {
+    float: left;
+    width: 40%
+}
+
+.loginbox {
+    float: right;
+    width: 60%;
+    text-align: left;
+    margin-top: 10px
+}
+
+
+.loginbox ul {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.loginbox ul li {
+    margin-top: 11px
+}
+
+.loginbox label {
+    display: inline-block;
+    width: 72px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+    text-align: left
+}
+
+.loginbox input {
+    width: 220px;
+    height: 40px;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    color: #555;
+    padding: 0px 10px;
+}
+
+.loginbox button {
+    width: 100px;
+    height: 90px;
+    background: #002C62;
+    color: #fff;
+    font-size: 16px;
+    vertical-align: top;
+    margin-top: 11px;
+    margin-left: 5px;
+}
+
+.loginbox a {
+    display: block;
+    color: #0000ee;
+    margin-top: 15px;
+    font-weight: bold;
+    margin-left: 307px
+}
+
+.textbox01 {
+    width: 100%;
+    margin: 20px auto;
+}
+
+.textboxx {
+    float: left;
+    width: 33.33%;
+    border: 1px solid #ddd;
+    height: 180px;
+    overflow: hidden;
+}
+
+.textboxxx {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center
+}
+
+.textboxxx h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+    padding: 20px 0 10px 0;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.textboxxx h4 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 25px
+}
+
+
+.textboxxx p {
+    font-size: 13px;
+    color: #666666;
+}
+
+.information p {
+    padding-left: 15px;
+    font-size: 13px;
+    color: #555;
+    background: url(../images/b_2x2_000_25.png)no-repeat 0% center
+}
